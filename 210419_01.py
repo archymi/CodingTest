@@ -7,7 +7,7 @@ for i in range(day):
     a, b = map(int, input().split())
     work_list.append([a, b])
 
-answerList = list()
+answerList = [0]
 
 def dfs(now_day, target_day, works, visited, result):
     if now_day == target_day:
@@ -24,7 +24,4 @@ def dfs(now_day, target_day, works, visited, result):
 
 
 dfs(-1, day, work_list, list(), 0)
-if len(answerList) == 0:
-    print(0)
-else:
-    print(max(answerList))
+print(max(answerList))
