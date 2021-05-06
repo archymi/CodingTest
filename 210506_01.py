@@ -1,3 +1,5 @@
+# https://programmers.co.kr/learn/courses/30/lessons/72410
+
 def solution(new_id):
     # new_id의 모든 대문자를 대응되는 소문자로 치환합니다.
     def check_1(new: str):
